@@ -1,8 +1,31 @@
 body {
     min-height:100vh;
 }
+p, h1, h2, h3, h4, h5, h6 {
+    font-family:'Helvetica';
+}
 #main {
     display: grid;
     grid-gap: 25px;
-    grid-template-columns: minmax(150px, 1fr) 2fr minmax(150px, 1fr)auto;
+    grid-template-columns: minmax(150px, 1fr) 2fr minmax(150px, 1fr);
+}
+#new-dog-button {
+    grid-column: 1 / -1;
+    padding:15px;
+    color:white;
+    background-color:#333;
+    border:none;
+    font-size:20px;
+    font-weight:500;
+}
+#new-dog-button:hover {
+    cursor:pointer;
+    background-color:#232323;
+}
+/* #dog-section #main-dog:hover {
+    cursor:pointer;
+} */
+#main-dog {
+    max-width:100%;
+    transition:opacity .5s ease-in-out;
 }
