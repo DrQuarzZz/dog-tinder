@@ -1,0 +1,8 @@
+body {
+    min-height:100vh;
+}
+#main {
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: minmax(150px, 1fr) 2fr minmax(150px, 1fr)auto;
+}
